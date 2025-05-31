@@ -1,0 +1,172 @@
+.background-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-Fit: cover;
+    z-Index: 0;
+}
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.45);
+    /* Adjust opacity for darkness */
+    z-index: 1;
+    pointer-events: none;
+}
+
+.floating-tile {
+    position: static;
+    margin:2rem auto;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    width: 750px;
+    max-width: 95vw;
+    height: 556px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 2rem;
+    z-index: 2;
+    text-align: center;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    box-sizing: border-box;
+    border: 1.5px solid rgba(88, 88, 88, 0.384);/* Thin, subtle border */
+}
+.floating-tile h1 {
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+    color: #fff !important;
+}
+
+.floating-tile p {
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .floating-tile {
+        width: 95vw;
+        height:auto;
+        max-width: 95vw;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .floating-tile {
+        width: 95vw;
+        min-width: unset;
+        height: auto;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+}
+.form-control {
+    background: rgba(255, 255, 255, 0.178);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 1.5rem !important;
+    border: 1.5px solid rgba(88, 88, 88, 0.15);
+    color: #474747;
+}
+
+/* Set placeholder color to gray */
+.form-control::placeholder {
+    color: #999898;
+    opacity: 1;
+}
+
+.form-control:focus {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .15);
+    border-color: #80bdff;
+}
+
+/* Shorten width of input fields and button */
+.form-control,
+.btn-primary.w-100 {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.btn-primary.w-100 {
+    background: #fff !important;
+    color: #222 !important;
+    border: none;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-primary.w-100:hover,
+.btn-primary.w-100:focus {
+    background: #f0f0f0 !important;
+    color: #007bff !important;
+}
+
+/* Navbar styles */
+.videomag-navbar {
+    z-index: 10;
+}
+.videomag-navbar .navbar-brand {
+    margin-left: 10px;
+}
+.videomag-navbar .videomag-title {
+    font-weight: 900;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.videomag-navbar .videomag-tagline {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #00c6ff;
+    margin-left: 1rem;
+    letter-spacing: 0.05em;
+}
+
+/* About tile styles */
+.about-tile-modal {
+    background: rgba(0,0,0,0.7);
+    z-index: 1050;
+}
+.about-tile-card {
+    max-width: 420px;
+    position: relative;
+    background: linear-gradient(135deg, #001f3f 60%, #00c6ff 100%);
+    color: #fff;
+    box-shadow: 0 8px 32px 0 rgba(0,198,255,0.25);
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+}
+.about-tile-card h2 {
+    color: #00c6ff;
+    font-weight: 700;
+}
+.about-tile-card ul {
+    padding-left: 1.2rem;
+    font-size: 1.08rem;
+    margin-bottom: 0;
+}
+.about-tile-card li b {
+    color: #fff;
+}
+.about-tile-card li span {
+    color: #00c6ff;
+}
+.about-tile-card li span[style*="color: #ffeb3b"] {
+    color: #ffeb3b !important;
+}
