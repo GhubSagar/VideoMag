@@ -25,18 +25,18 @@ VideoMag is a full-stack automated video processing platform. Users can submit p
 - **Frontend:** React.js (with Tailwind CSS / responsive UI)
 - **Backend:** Node.js, Express
 - **Worker System:**
--    BullMQ (Redis-based job queue)
--    FFmpeg (video processing, transcoding, thumbnails, subtitles)
+-     BullMQ (Redis-based job queue)
+-     FFmpeg (video processing, transcoding, thumbnails, subtitles)
 - **Database:** MongoDB Atlas (for storing job metadata and user tokens)
 - **Cloud Storage:** Cloudflare R2 (S3-compatible object storage for videos and assets)
 - **Queue Infrastructure:** Redis (for BullMQ)
 - **Authentication**: Token-based job access (NanoID or UUID-based)
 - **Deployment:**
--   Render.com (Static Site for frontend, Web Service for backend)
--   Upstash (Redis)
+-     Render.com (Static Site for frontend, Web Service for backend)
+-     Upstash (Redis)
 - **Optional Add-ons:**
--   Nodemailer (for email notifications)
--   Subtitle generation via Whisper / Cloudflare ASR
+-     Nodemailer (for email notifications)
+-     Subtitle generation via Whisper / Cloudflare ASR
 
 
 ---
